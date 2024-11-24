@@ -5,7 +5,7 @@ import HeroSection from './HeroSection'
 const Home = () => {
   return (
     <div>
-      <Banner></Banner>
+      {/* <Banner></Banner> */}
       <HeroSection></HeroSection>
     </div>
   )

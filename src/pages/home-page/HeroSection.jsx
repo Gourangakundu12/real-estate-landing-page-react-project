@@ -2,7 +2,7 @@ import React from 'react';
 
 const HeroSection = () => {
     return (
-        <div className='w-11/12 mx-auto ' >
+        <div className='w-11/12 mx-auto relative z-10 ' >
             <div className="bg-[#fef6f3]  mx-auto p-8 flex flex-col md:flex-row items-center justify-between">
                 {/* Text Section */}
                 <div className="">
