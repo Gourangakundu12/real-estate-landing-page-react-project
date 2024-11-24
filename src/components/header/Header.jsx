@@ -62,7 +62,7 @@ const Header = () => {
 
         {/* Contact Us Button */}
         <div className="hidden lg:block">
-          <button className="flex items-center gap-2 border-2 border-[#FF5B28] px-4 py-2 rounded-lg">
+          <button className="flex items-center gap-2 text-[#0F0E0E] font-semibold border-2 border-[#FF5B28] px-4 py-2 rounded-lg">
             Contact Us
             <span>
               <img
