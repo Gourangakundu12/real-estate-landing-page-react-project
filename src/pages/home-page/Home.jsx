@@ -5,11 +5,13 @@ import Update from './Update'
 import AboutUs from './AboutUs'
 import UniqueHome from './UniqueHome'
 import EstateService from './EstateService';
+import LogoList from './LogoList LogoList'
 
 const Home = () => {
   return (
     <div>
       {/* <Banner></Banner> */}
+      <LogoList></LogoList>
       <EstateService></EstateService>
       <UniqueHome></UniqueHome>
       <AboutUs></AboutUs>
