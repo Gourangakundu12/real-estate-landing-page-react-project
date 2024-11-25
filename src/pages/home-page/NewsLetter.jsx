@@ -1,6 +1,6 @@
 import React from 'react';
 import cityBgImg from "../../assets/city-background.png"
-const HeroSection = () => {
+const NewsLetter = () => {
     return (
         <div className='max-w-screen-2xl mx-auto relative z-10' id='contact'>
             <div className="bg-[#fef6f3] p-8 flex flex-col md:flex-row items-center justify-between">
@@ -34,4 +34,4 @@ const HeroSection = () => {
     );
 };
 
-export default HeroSection;
+export default NewsLetter;

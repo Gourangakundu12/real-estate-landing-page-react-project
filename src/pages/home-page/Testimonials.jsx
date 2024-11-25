@@ -5,7 +5,7 @@ import aboutImg2 from "../../assets/about-2.png"
 import aboutImg3 from "../../assets/about-3.png"
 import quoteIcon from "../../assets/quate_icon.png"
 
-const AboutUs = () => {
+const Testimonials = () => {
     return (
         <div>
             <section className="bg-pink-50 py-16">
@@ -115,4 +115,4 @@ const AboutUs = () => {
     )
 }
 
-export default AboutUs
+export default Testimonials
