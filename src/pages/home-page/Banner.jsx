@@ -1,13 +1,13 @@
 import React from 'react';
 
+import bannerImg from "../../assets/banner.png"
+
 const Banner = () => {
     return (
         <>
-            <div className="bg-[#fef8f5] py-16">
-                <img src="https://res.cloudinary.com/dj2edy2rg/image/upload/v1732504919/Contents_lte5o9.png" alt="" />
+            <div className="bg-[#fef8f5] md:py-36 py-12 w-full mx-auto" id='home'>
+                <img src={bannerImg} alt="" className='h-full mx-auto' />
             </div>
-
-
         </>
     );
 };

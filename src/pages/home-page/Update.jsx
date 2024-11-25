@@ -1,10 +1,16 @@
 import React from 'react';
 
+import blogImg1 from "../../assets/blogs/blog-1.png"
+import blogImg2 from "../../assets/blogs/blog-2.png"
+import blogImg3 from "../../assets/blogs/blog-3.png"
+
+import arrowIcon from "../../assets/arrow.png"
+
 const Update = () => {
     return (
         <div>
-            <section className="bg-white mb-10 ">
-                <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+            <section className="bg-white mb-10 py-28" id='blog'>
+                <div className="max-w-screen-2xl container mx-auto px-5 sm:px-6 lg:px-8">
                     {/* Header */}
                     <div className="text-center mb-12">
                         <h2 className="text-3xl sm:text-4xl font-bold text-gray-800">
@@ -23,8 +29,8 @@ const Update = () => {
                         {/* Card 1 */}
                         <div className="border rounded-lg relative overflow-hidden shadow-lg">
                             <img
-                                src="https://res.cloudinary.com/dj2edy2rg/image/upload/v1732463491/Image_3_v7aokj.png"
-                                alt="First-time home buyers"
+                                src={blogImg1}
+                                alt="blogImg1"
                                 className="w-full h-48 md:h-52 object-cover"
                             />
                             <div className="p-4">
@@ -38,8 +44,8 @@ const Update = () => {
                         {/* Card 2 */}
                         <div className="border lg:-mb-14 lg:mt-14 rounded-lg overflow-hidden shadow-lg">
                             <img
-                                src="https://res.cloudinary.com/dj2edy2rg/image/upload/v1732464485/Image_4_rkxmla.png"
-                                alt="Rental market tips"
+                                src={blogImg2}
+                                alt="blogImg2"
                                 className="w-full h-48 md:h-52 object-cover"
                             />
                             <div className="p-4">
@@ -53,8 +59,8 @@ const Update = () => {
                         {/* Card 3 */}
                         <div className="border rounded-lg relative overflow-hidden shadow-lg">
                             <img
-                                src="https://res.cloudinary.com/dj2edy2rg/image/upload/v1732464522/Image_5_isiwmx.png"
-                                alt="Choosing neighborhoods"
+                                src={blogImg3}
+                                alt="blogImg2"
                                 className="w-full h-48 md:h-52 object-cover"
                             />
                             <div className="p-4">
@@ -71,7 +77,7 @@ const Update = () => {
                         <button
                             className="px-6 py-3 border mx-auto text-[#0F0E0E] border-orange-600  flex items-center gap-2 text-sm font-medium rounded-md  transition-transform transform hover:scale-105"
                         >
-                            View All Insights <span> <img src="https://res.cloudinary.com/dj2edy2rg/image/upload/v1732385450/Vector_qbkpq8.png" alt="" /> </span>
+                            View All Insights <span> <img src={arrowIcon} alt="" /> </span>
                         </button>
                     </div>
                 </div>

@@ -1,10 +1,17 @@
 import React from 'react'
 
+import cardImg1 from "../../assets/property/card-1.png"
+import cardImg2 from "../../assets/property/card-2.png"
+import cardImg3 from "../../assets/property/card-3.png"
+import cardImg4 from "../../assets/property/card-4.png"
+import cardImg5 from "../../assets/property/card-5.png"
+import cardImg6 from "../../assets/property/card-6.png"
+
+import arrowIcon from "../../assets/arrow.png"
+
 const UniqueHome = () => {
     return (
-        <div>
-            <div>
-                <section className="bg-white mb-10 ">
+        <section className="bg-white mb-10 py-28" id='properties'>
                     <div className="container mx-auto px-4 sm:px-6 lg:px-8">
                         {/* Header */}
                         <div className="text-center mb-12">
@@ -23,7 +30,7 @@ const UniqueHome = () => {
                             {/* Card 1 */}
                             <div className="  relative overflow-hidden ">
                                 <img
-                                    src="https://res.cloudinary.com/dj2edy2rg/image/upload/v1732466333/Image_9_gfy6xi.png"
+                                    src={cardImg1}
                                     alt="First-time home buyers"
                                     className="w-full  object-cover"
                                 />
@@ -41,8 +48,8 @@ const UniqueHome = () => {
                             {/* Card 2 */}
                             <div className=" lg:-mb-16 lg:mt-16  overflow-hidden ">
                                 <img
-                                    src="https://res.cloudinary.com/dj2edy2rg/image/upload/v1732466333/image_21_ktaife.png"
-                                    alt="Rental market tips"
+                                    src={cardImg2}
+                                    alt="cardImg2"
                                     className="w-full  object-cover"
                                 />
                                 <div className=" mt-4 flex  justify-between items-center ">
@@ -59,8 +66,8 @@ const UniqueHome = () => {
                             {/* Card 3 */}
                             <div className=" relative overflow-hidden  ">
                                 <img
-                                    src="https://res.cloudinary.com/dj2edy2rg/image/upload/v1732466333/Image_10_l5lk9o.png"
-                                    alt="Choosing neighborhoods"
+                                    src={cardImg3}
+                                    alt="cardImg3"
                                     className="w-full object-cover"
                                 />
                                 <div className=" mt-4 flex  justify-between items-center ">
@@ -81,8 +88,8 @@ const UniqueHome = () => {
                                 {/* Card 4 */}
                                 <div className="  relative overflow-hidden ">
                                     <img
-                                        src="https://res.cloudinary.com/dj2edy2rg/image/upload/v1732466333/Image_11_tzcnj2.png"
-                                        alt="First-time home buyers"
+                                        src={cardImg4}
+                                        alt="cardImg4"
                                         className="w-full  object-cover"
                                     />
                                     <div className=" mt-4 flex  justify-between items-center ">
@@ -99,8 +106,8 @@ const UniqueHome = () => {
                                 {/* Card 5 */}
                                 <div className=" lg:-mb-16 lg:mt-16  overflow-hidden ">
                                     <img
-                                        src="https://res.cloudinary.com/dj2edy2rg/image/upload/v1732466333/Image_12_nb2qaf.png"
-                                        alt="Rental market tips"
+                                        src={cardImg5}
+                                        alt="cardImg5"
                                         className="w-full  object-cover"
                                     />
                                     <div className=" mt-4 flex  justify-between items-center ">
@@ -117,8 +124,8 @@ const UniqueHome = () => {
                                 {/* Card 6 */}
                                 <div className=" relative overflow-hidden  ">
                                     <img
-                                        src="https://res.cloudinary.com/dj2edy2rg/image/upload/v1732466332/Image_13_j1elck.png"
-                                        alt="Choosing neighborhoods"
+                                        src={cardImg6}
+                                        alt="cardImg6"
                                         className="w-full object-cover"
                                     />
                                     <div className=" mt-4 flex  justify-between items-center ">
@@ -139,13 +146,11 @@ const UniqueHome = () => {
                             <button
                                 className="px-6 py-3 border mx-auto text-[#0F0E0E] border-orange-600  flex items-center gap-2 text-sm font-medium rounded-md  transition-transform transform hover:scale-105"
                             >
-                                View All Product <span> <img src="https://res.cloudinary.com/dj2edy2rg/image/upload/v1732385450/Vector_qbkpq8.png" alt="" /> </span>
+                                View All Product <span> <img src={arrowIcon} alt="arrow icon" /> </span>
                             </button>
                         </div>
                     </div>
                 </section>
-            </div>
-        </div>
     )
 }
 

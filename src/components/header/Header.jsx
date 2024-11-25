@@ -1,25 +1,37 @@
-import React, { useState } from 'react';
-import { NavLink } from 'react-router-dom';
+import React, { useState } from "react";
 import { MdMenu, MdClose } from "react-icons/md";
+
+import arrowIcon from "../../assets/arrow.png"
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [activeLink, setActiveLink] = useState("#home"); // Default active link
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
 
+  const handleLinkClick = (link) => {
+    setActiveLink(link);
+    setIsMenuOpen(false); // Close the menu on mobile after clicking
+  };
+
+  const linkClasses = (link) =>
+    link === activeLink
+      ? "text-[#FF5B28] font-bold"
+      : "text-[#0F0E0E] font-semibold";
+
   return (
-    <div className="w-11/12 mx-auto py-4">
-      <div className="flex justify-between items-center">
+    <div className="bg-white sticky top-0 left-0 right-0 z-[999999]">
+      <div className="max-w-screen-2xl mx-auto py-4 px-5 flex justify-between items-center">
         {/* Logo */}
-        <div>
+        <a href="/">
           <img
-            src="https://res.cloudinary.com/dj2edy2rg/image/upload/v1732385189/logo_utajox.png"
+            src="/logo.png"
             alt="Logo"
             className="w-28"
           />
-        </div>
+        </a>
 
         {/* Hamburger Menu for Small Devices */}
         <div className="lg:hidden">
@@ -35,42 +47,40 @@ const Header = () => {
         {/* Navigation Menu for Large Devices */}
         <div className="hidden lg:block">
           <nav>
-            <ul className="flex items-center gap-8 text-[#0F0E0E] font-semibold">
-              <li>
-                <NavLink to="/" activeClassName="text-[#FF5B28]" exact>
-                  Home
-                </NavLink>
-              </li>
-              <li>
-                <NavLink to="/about" activeClassName="text-[#FF5B28]">
-                  About
-                </NavLink>
-              </li>
-              <li>
-                <NavLink to="/blog" activeClassName="text-[#FF5B28]">
-                  Blog
-                </NavLink>
-              </li>
-              <li>
-                <NavLink to="/properties" activeClassName="text-[#FF5B28]">
-                  Properties
-                </NavLink>
-              </li>
+            <ul className="flex items-center gap-8">
+              {[
+                { href: "#home", label: "Home" },
+                { href: "#about", label: "About" },
+                { href: "#properties", label: "Properties" },
+                { href: "#blog", label: "Blog" },
+              ].map((link) => (
+                <li key={link.href}>
+                  <a
+                    href={link.href}
+                    onClick={() => handleLinkClick(link.href)}
+                    className={linkClasses(link.href)}
+                  >
+                    {link.label}
+                  </a>
+                </li>
+              ))}
             </ul>
           </nav>
         </div>
 
         {/* Contact Us Button */}
         <div className="hidden lg:block">
-          <button className="flex items-center gap-2 text-[#0F0E0E] font-semibold border-2 border-[#FF5B28] px-4 py-2 rounded-lg">
-            Contact Us
-            <span>
-              <img
-                src="https://res.cloudinary.com/dj2edy2rg/image/upload/v1732385450/Vector_qbkpq8.png"
-                alt="Arrow Icon"
-                className="w-4"
-              />
-            </span>
+          <button className="text-[#0F0E0E] font-semibold border-2 border-[#FF5B28] px-4 py-2 rounded-lg">
+            <a href="#contact" className="flex items-center gap-2">
+              Contact Us
+              <span>
+                <img
+                  src={arrowIcon}
+                  alt="Arrow Icon"
+                  className="w-4"
+                />
+              </span>
+            </a>
           </button>
         </div>
       </div>
@@ -82,7 +92,7 @@ const Header = () => {
             {/* Logo */}
             <div>
               <img
-                src="https://res.cloudinary.com/dj2edy2rg/image/upload/v1732385189/logo_utajox.png"
+                src="/logo.png"
                 alt="Logo"
                 className="w-20"
               />
@@ -96,27 +106,23 @@ const Header = () => {
 
           {/* Navigation Links */}
           <nav className="mt-4">
-            <ul className="flex flex-col gap-6 text-center text-[#0F0E0E] font-semibold">
-              <li>
-                <NavLink to="/" onClick={toggleMenu} activeClassName="text-[#FF5B28]" exact>
-                  Home
-                </NavLink>
-              </li>
-              <li>
-                <NavLink to="/about" onClick={toggleMenu} activeClassName="text-[#FF5B28]">
-                  About
-                </NavLink>
-              </li>
-              <li>
-                <NavLink to="/blog" onClick={toggleMenu} activeClassName="text-[#FF5B28]">
-                  Blog
-                </NavLink>
-              </li>
-              <li>
-                <NavLink to="/properties" onClick={toggleMenu} activeClassName="text-[#FF5B28]">
-                  Properties
-                </NavLink>
-              </li>
+            <ul className="flex flex-col gap-6 text-center">
+              {[
+                { href: "#home", label: "Home" },
+                { href: "#about", label: "About" },
+                { href: "#properties", label: "Properties" },
+                { href: "#blog", label: "Blog" },
+              ].map((link) => (
+                <li key={link.href}>
+                  <a
+                    href={link.href}
+                    onClick={() => handleLinkClick(link.href)}
+                    className={linkClasses(link.href)}
+                  >
+                    {link.label}
+                  </a>
+                </li>
+              ))}
             </ul>
           </nav>
 
@@ -126,7 +132,7 @@ const Header = () => {
               Contact Us
               <span>
                 <img
-                  src="https://res.cloudinary.com/dj2edy2rg/image/upload/v1732385450/Vector_qbkpq8.png"
+                  src={arrowIcon}
                   alt="Arrow Icon"
                   className="w-4"
                 />

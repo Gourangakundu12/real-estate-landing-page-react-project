@@ -1,11 +1,11 @@
 import React from 'react';
-
+import cityBgImg from "../../assets/city-background.png"
 const HeroSection = () => {
     return (
-        <div className='w-11/12 mx-auto relative z-10 ' >
-            <div className="bg-[#fef6f3]  mx-auto p-8 flex flex-col md:flex-row items-center justify-between">
+        <div className='max-w-screen-2xl mx-auto relative z-10' id='contact'>
+            <div className="bg-[#fef6f3] p-8 flex flex-col md:flex-row items-center justify-between">
                 {/* Text Section */}
-                <div className="">
+                <div className="md:w-1/2">
                     <h1 className="text-3xl md:text-4xl font-bold mb-4">
                         Find your <span className="text-orange-500">dream home</span> today!
                     </h1>
@@ -22,11 +22,11 @@ const HeroSection = () => {
                 </div>
 
                 {/* Illustration Section */}
-                <div className="mt-8 md:mt-0">
+                <div className="md:w-1/2 mt-8 md:mt-0 ">
                     <img
-                        src="https://res.cloudinary.com/dj2edy2rg/image/upload/v1732462430/Vectors_2x_xietrz.png" // Replace with the actual illustration image link
+                        src={cityBgImg} 
                         alt="City Illustration"
-                        className="w-full "
+                        className="w-full mx-auto"
                     />
                 </div>
             </div>

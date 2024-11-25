@@ -1,8 +1,8 @@
 import React from 'react';
-
+import arrowIcon from "../../assets/arrow.png"
 const RealEstateSection = () => {
     return (
-        <div className="w-11/12 mx-auto lg:my-12 my-7">
+        <div className="max-w-screen-2xl mx-auto lg:my-12 my-7 p-5">
             <section className="bg-white">
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
                     {/* Left Section */}
@@ -22,7 +22,7 @@ const RealEstateSection = () => {
                             <button className="px-6 py-3 border text-gray-800 border-orange-600 flex items-center gap-2 text-sm lg:text-base font-medium rounded-md transition-transform transform hover:scale-105">
                                 More About Us
                                 <img
-                                    src="https://res.cloudinary.com/dj2edy2rg/image/upload/v1732385450/Vector_qbkpq8.png"
+                                    src={arrowIcon}
                                     alt="Arrow Icon"
                                     className="w-4 h-4"
                                 />

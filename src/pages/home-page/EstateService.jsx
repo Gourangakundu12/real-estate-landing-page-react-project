@@ -1,11 +1,14 @@
 import React from 'react';
 
+import realEstateAgent from "../../assets/real-estate-agent.png"
+import starVectorIcon from "../../assets/start-vector.png"
+
 const EstateService = () => {
     return (
-        <div className="bg-[#FDF3EE] my-5 lg:my-14">
-            <section className="w-11/12 mx-auto">
+        <div className="bg-[#FDF3EE] my-5 py-24" id='about'>
+            <section className="max-w-screen-2xl mx-auto">
                 {/* Main Container */}
-                <div className="flex flex-col lg:flex-row items-center justify-between py-3 lg:py-12 gap-10 lg:gap-20">
+                <div className="flex flex-col lg:flex-row items-center justify-between py-12 px-4 lg:py-24 gap-10 lg:gap-20">
                     {/* Left Content */}
                     <div className="lg:w-1/2 text-center lg:text-left">
                         <h2 className=" lg:text-4xl font-bold text-gray-800">
@@ -14,9 +17,9 @@ const EstateService = () => {
                         </h2>
                         <div className=" mt-4 lg:mt-10 flex justify-center lg:justify-start">
                             <img
-                                src="https://res.cloudinary.com/dj2edy2rg/image/upload/v1732468633/Image_14_yfgnzw.png"
+                                src={realEstateAgent}
                                 alt="Professional Real Estate Agent"
-                                className="w-[80%] md:w-[70%] lg:w-[65%] h-[65vh] rounded-lg shadow-lg"
+                                className=" rounded-lg shadow-lg"
                             />
                         </div>
                     </div>
@@ -26,7 +29,7 @@ const EstateService = () => {
                         {/* Vector Image */}
                         <div className="relative flex justify-center mb-3 lg:mb-10">
                             <img
-                                src="https://res.cloudinary.com/dj2edy2rg/image/upload/v1732469788/Vector_1_tq2mwl.png"
+                                src={starVectorIcon}
                                 className="  "
                                 alt="Vector Graphic"
                             />

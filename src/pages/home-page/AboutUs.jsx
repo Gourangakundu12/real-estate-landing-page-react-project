@@ -1,10 +1,15 @@
 import React from 'react'
 
+import aboutImg1 from "../../assets/about-1.png"
+import aboutImg2 from "../../assets/about-2.png"
+import aboutImg3 from "../../assets/about-3.png"
+import quoteIcon from "../../assets/quate_icon.png"
+
 const AboutUs = () => {
     return (
         <div>
             <section className="bg-pink-50 py-16">
-                <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+                <div className="max-w-screen-2xl container mx-auto px-5">
                     {/* Header */}
                     <div className="text-center mb-12">
                         <h2 className="text-3xl sm:text-4xl font-bold text-gray-800">
@@ -22,7 +27,7 @@ const AboutUs = () => {
                         <div className="bg-white rounded-lg shadow-md p-6">
                             <div className=" mb-4">
                                 <img
-                                    src="https://res.cloudinary.com/dj2edy2rg/image/upload/v1732465310/Image_6_hhf93a.png"
+                                    src={aboutImg1}
                                     alt="Michael Thompson"
                                     className="w-12 h-12 rounded-full object-cover"
                                 />
@@ -37,7 +42,7 @@ const AboutUs = () => {
                                 </div>
                                 <div>
                                     <span className="text-2xl text-gray-300">
-                                        <img src="https://res.cloudinary.com/dj2edy2rg/image/upload/v1732465170/Elelments_jh9xy0.png" alt="" />
+                                        <img src={quoteIcon} alt="" />
                                     </span>
                                 </div>
                             </div>
@@ -48,7 +53,7 @@ const AboutUs = () => {
                         <div className="bg-white rounded-lg shadow-md p-6">
                             <div className=" mb-4">
                                 <img
-                                    src="https://res.cloudinary.com/dj2edy2rg/image/upload/v1732465309/Image_7_yiy7ew.png"
+                                    src={aboutImg2}
                                     alt="Michael Thompson"
                                     className="w-12 h-12 rounded-full object-cover"
                                 />
@@ -63,7 +68,7 @@ const AboutUs = () => {
                                 </div>
                                 <div>
                                     <span className="text-2xl text-gray-300">
-                                        <img src="https://res.cloudinary.com/dj2edy2rg/image/upload/v1732465170/Elelments_jh9xy0.png" alt="" />
+                                        <img src={quoteIcon} alt="" />
                                     </span>
                                 </div>
                             </div>
@@ -74,7 +79,7 @@ const AboutUs = () => {
                         <div className="bg-white rounded-lg shadow-md p-6">
                             <div className=" mb-4">
                                 <img
-                                    src="https://res.cloudinary.com/dj2edy2rg/image/upload/v1732465310/Image_8_cwjj61.png"
+                                    src={aboutImg3}
                                     alt="Michael Thompson"
                                     className="w-12 h-12 rounded-full object-cover"
                                 />
@@ -90,7 +95,7 @@ const AboutUs = () => {
                                 </div>
                                 <div>
                                     <span className="text-2xl text-gray-300">
-                                        <img src="https://res.cloudinary.com/dj2edy2rg/image/upload/v1732465170/Elelments_jh9xy0.png" alt="" />
+                                        <img src={quoteIcon} alt="" />
                                     </span>
                                 </div>
                             </div>
