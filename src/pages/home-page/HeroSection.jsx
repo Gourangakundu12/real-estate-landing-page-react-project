@@ -14,7 +14,7 @@ const HeroSection = () => {
                     </p>
                     <a
                         href="#contact"
-                        className="inline-flex items-center px-6 py-3 bg-white border border-black text-black font-medium rounded hover:bg-gray-100 transition"
+                        className="inline-flex items-center px-6 py-3 bg-white border border-orange-500 text-black font-medium rounded hover:bg-gray-100 transition"
                     >
                         Contact Us
                         <span className="ml-2 text-lg">➔</span>
